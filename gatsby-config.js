@@ -15,12 +15,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        displayName: true,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-styled-components`,
+    //   options: {
+    //     displayName: true,
+    //   },
+    // },
+    `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
