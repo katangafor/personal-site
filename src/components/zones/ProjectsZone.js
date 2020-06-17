@@ -233,8 +233,16 @@ const Project = styled.div`
 
   .images-wrapper {
     flex-basis: 50%;
-    margin-left: 40px;
+    margin-top: 30px;
     position: relative;
+
+    @media only screen and (max-width: 1000px) {
+      margin-left: 20px;
+    }
+
+    @media only screen and (min-width: 1000px) {
+      margin-left: 40px;
+    }
   }
 
   .laptop-image {
@@ -250,7 +258,7 @@ const Project = styled.div`
     left: -20px;
     bottom: 0px;
     @media only screen and (max-width: 1000px) {
-      width: 180px;
+      width: 140px;
     }
     @media only screen and (min-width: 1000px) {
       width: 100px;

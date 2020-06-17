@@ -7,29 +7,28 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="green-hill.svg"
+   sodipodi:docname="tree-1.svg"
    inkscape:version="1.0 (4035a4f, 2020-05-01)"
-   id="svg8"
+   id="svg38"
    version="1.1"
-   viewBox="0 0 210 71"
+   viewBox="0 0 40 108"
    height="100%"
-   width="100%"
-   preserveAspectRatio="none">
+   class="tree-1">
   <defs
-     id="defs2" />
+     id="defs32" />
   <sodipodi:namedview
      inkscape:window-maximized="0"
-     inkscape:window-y="23"
-     inkscape:window-x="0"
+     inkscape:window-y="152"
+     inkscape:window-x="1429"
      inkscape:window-height="755"
      inkscape:window-width="1252"
      showgrid="false"
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="545.1756"
-     inkscape:cx="441.10823"
-     inkscape:zoom="0.48180725"
+     inkscape:cy="414.08363"
+     inkscape:cx="131.51993"
+     inkscape:zoom="0.53446706"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -37,7 +36,7 @@
      pagecolor="#ffffff"
      id="base" />
   <metadata
-     id="metadata5">
+     id="metadata35">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -48,25 +47,42 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-      <!-- <rect x="0" y="0" height="100%" width="100%" fill="white" /> -->
-
+  <!-- <rect x="0" y="0" height="100%" width="100%" fill="white" /> -->
   <g
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
+    <ellipse
+        class="tree-fill"
+       style="stroke-width:0.257758"
+       id="ellipse112"
+       fill="#6c63ff"
+       ry="40.961212"
+       rx="20.07505"
+       cy="40.961212"
+       cx="20.07505" />
     <path
-       transform="rotate(-90)"
-       sodipodi:open="true"
-       d="M 0,105.2507 A 35.420025,105.2507 0 0 1 -34.759761,210.48312 35.420025,105.2507 0 0 1 -70.815434,109.17397 35.420025,105.2507 0 0 1 -37.399898,0.16455525 35.420025,105.2507 0 0 1 -0.09842944,97.409617"
-       sodipodi:arc-type="arc"
-       sodipodi:end="6.2086171"
-       sodipodi:start="0"
-       sodipodi:ry="105.2507"
-       sodipodi:rx="35.420025"
-       sodipodi:cy="105.2507"
-       sodipodi:cx="-35.420025"
-       sodipodi:type="arc"
-       id="path12"
-       style="fill:#258f57;stroke-width:0.318216" />
+       style="stroke-width:0.257758"
+       id="path114"
+       fill="#3f3d56"
+       d="m 22.418897,107.92664 c -8.026544,-48.158682 -0.08103,-96.141543 1.44e-4,-96.620536 l 0.584336,0.09898 c -0.08103,0.478125 -8.00947,48.366637 1.45e-4,96.424316 z" />
+    <rect
+       style="stroke-width:0.257758"
+       id="rect116"
+       fill="#3f3d56"
+       transform="rotate(-28.141598)"
+       height="0.59277016"
+       width="20.58742"
+       y="46.653549"
+       x="-2.4655361" />
+    <rect
+       style="stroke-width:0.257758"
+       id="rect118"
+       fill="#3f3d56"
+       transform="rotate(-61.84329)"
+       height="20.58742"
+       width="0.59277016"
+       y="18.513048"
+       x="-33.167007" />
   </g>
 </svg>
