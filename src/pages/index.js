@@ -3,13 +3,14 @@ import styled, { createGlobalStyle } from "styled-components";
 
 import LandingZone from '../components/zones/LandingZone/LandingZone';
 import BioZone from '../components/zones/BioZone';
+import ProjectsZone from '../components/zones/ProjectsZone';
+import EndingZone from '../components/zones/EndingZone';
 
 const HeightStretcher = styled.div`
   min-height: 150vh;
 `;
 
 const IndexPage = () => {
-  const [offsetZ, setOffsetZ] = useState(0);
 
   return (
     <>
@@ -17,7 +18,8 @@ const IndexPage = () => {
       <ParallaxContainer>
         <LandingZone />
         <BioZone />
-        <HeightStretcher></HeightStretcher>
+        <ProjectsZone />
+        <EndingZone />
       </ParallaxContainer>
     </>
   );

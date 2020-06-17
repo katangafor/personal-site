@@ -5,7 +5,7 @@ import styled, { keyframes } from "styled-components";
 var Chance = require("chance");
 var chance = new Chance();
 
-const ScrollingTextBox = ({ textList, textAlign }) => {
+const ScrollingTextBox = ({ textList, textAlign, animationsEnabled }) => {
 
   const [offset, setOffset] = useState(0);
   const intervalRef = useRef();
@@ -15,13 +15,13 @@ const ScrollingTextBox = ({ textList, textAlign }) => {
       const randoNumber = chance.integer({ min: (textList.length - 1 ) * -1, max: 0});
       const pixelValue = randoNumber * 70;
       setOffset(pixelValue.toString());
-    }, 3000)
+    }, 1800)
   }, []);
 
   return (
     <>
       <ScrollingTextBoxContainer>
-        <ScrollingTextBoxContent textAlign={textAlign} offset={offset}>
+        <ScrollingTextBoxContent textAlign={textAlign} offset={offset} animationsEnabled={animationsEnabled}>
           {textList.map((text, index) => {
             return (
               <ScrollingTextElementContainer key={index}>
@@ -53,7 +53,7 @@ const ScrollingTextBoxContent = styled("div")`
   color: "white";
   position: relative;
   transition: 1s all ease-in-out;
-  top: ${props => props.offset}px;
+  top: ${props => props.animationsEnabled ? props.offset : '0'}px;
 `;
 
 const ScrollingTextElementContainer = styled.div`

@@ -3,32 +3,72 @@ import styled from "styled-components";
 
 import Stars from "../../stars";
 import ScrollingTextBox from './ScrollingTextBox';
+import UFO from '../../../icons/ufo.svg';
+import Planet from '../../../icons/planet.svg';
+
+const AnimationsButton = styled.button`
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  
+  :hover {
+    cursor: pointer;
+  }
+
+  p {
+    padding: 0px;
+    margin: 0px;
+
+  }
+`;
+
 
 const numbies = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 const LandingZone = () => {
-  // const [offsetZ, setOffsetZ] = useState(0);
-  // const [numbies, setNumbies] = useState([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);
+  
+  const [animationsEnabled, setAnimationsEnabled] = useState(true);
+
+  const toggleAnimations = () => {
+    setAnimationsEnabled((prevState) => !prevState);
+  }
 
   return (
     <>
+      <AnimationsButton
+        onClick={toggleAnimations}
+        animationsEnabled={animationsEnabled}
+      >
+        {animationsEnabled ? (
+          <p>Disable animations</p>
+        ) : (
+          <p>Enable animations</p>
+        )}
+      </AnimationsButton>
       <SkyGradient1></SkyGradient1>
       <SkyGradient2></SkyGradient2>
-      <StarsWrapper1>
+      <StarsWrapper animationsEnabled={animationsEnabled} depth={2}>
         {numbies.map((numby, index) => {
           return <Stars key={`stars1:${index}`} />;
         })}
-      </StarsWrapper1>
-      <StarsWrapper2>
+      </StarsWrapper>
+      <StarsWrapper animationsEnabled={animationsEnabled} depth={-2}>
         {numbies.map((numby, index) => {
-          return <Stars key={`stars2:${index}`} />;
+          return <Stars key={`stars1:${index}`} />;
         })}
-      </StarsWrapper2>
-      <StarsWrapper3>
+      </StarsWrapper>
+      <StarsWrapper animationsEnabled={animationsEnabled} depth={-8}>
         {numbies.map((numby, index) => {
-          return <Stars key={`stars3:${index}`} />;
+          return <Stars key={`stars1:${index}`} />;
         })}
-      </StarsWrapper3>
+      </StarsWrapper>
+      <UFOWrapper>
+        <UFO />
+      </UFOWrapper>
+      {/* <PlanetWrapper>
+        <Planet />
+      </PlanetWrapper> */}
       <IntroInfo>
         <div className="nameWrapper">
           <h1>Johnny Hane</h1>
@@ -36,14 +76,45 @@ const LandingZone = () => {
         <TaglineContainer>
           <TaglineElement>
             <ScrollingTextBox
-              // textList={["buddy", "stinky", "dooby", "silly", "smelly", "beepy"]}
-              textList={["front-end", "javascript", "css", "SEO", "styled-components", "node", "react", "event-driven"]}
+              animationsEnabled={animationsEnabled}
+              textList={[
+                "front-end",
+                "javascript",
+                "css",
+                "SEO",
+                "node",
+                "react",
+                "UX + UI",
+                "event-driven",
+                "redux",
+                "git",
+                "svg",
+                "rocket league",
+                "gatsby",
+                "jest",
+                "enzyme",
+              ]}
               textAlign="right"
             />
           </TaglineElement>
           <TaglineElement>
             <ScrollingTextBox
-              textList={["developer", "legend", "rocketeer", "wizard", "madman", "specialist", "virtuoso", "lunatic", "expert"]}
+              animationsEnabled={animationsEnabled}
+              textList={[
+                "developer",
+                "legend",
+                "rocketeer",
+                "wizard",
+                "madman",
+                "specialist",
+                "virtuoso",
+                "lunatic",
+                "expert",
+                "aficionado",
+                "connoisseur",
+                "master",
+                "kinda guy",
+              ]}
               textAlign="left"
             />
           </TaglineElement>
@@ -76,24 +147,11 @@ const SkyGradient2 = styled.div`
   z-index: -10;
 `;
 
-const StarsWrapper1 = styled.div`
+const StarsWrapper = styled.div`
   position: absolute;
   top: 0;
-  transform: translateZ(2px);
-  z-index: -15;
-`;
-
-const StarsWrapper2 = styled.div`
-  position: absolute;
-  top: 0;
-  transform: translateZ(-2px);
-  z-index: -15;
-`;
-
-const StarsWrapper3 = styled.div`
-  position: absolute;
-  top: 0;
-  transform: translateZ(-8px);
+  transition: .2s all;
+  transform: translateZ(${props => props.animationsEnabled ? props.depth : '0'}px);
   z-index: -15;
 `;
 
@@ -130,4 +188,21 @@ const TaglineContainer = styled.div`
 const TaglineElement = styled.div`
   display: inline-block;
   width: 50%;
+`;
+
+const UFOWrapper = styled.div`
+  position: absolute;
+  top: 300px;
+  right: 50px;
+  height: 50px;
+  transform: translateZ(-1px);
+  transform: rotate(-20deg);
+`;
+
+const PlanetWrapper = styled.div`
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  transform: translateZ(-3px);
 `;
