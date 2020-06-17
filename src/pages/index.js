@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
+import { Helmet } from 'react-helmet';
 
 import LandingZone from '../components/zones/LandingZone/LandingZone';
 import BioZone from '../components/zones/BioZone';
@@ -14,6 +15,10 @@ const IndexPage = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Johnny Hane</title>
+      </Helmet>
       <GlobalStyle />
       <ParallaxContainer>
         <LandingZone />
