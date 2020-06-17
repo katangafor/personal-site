@@ -7,7 +7,7 @@ const BioZone = () => {
       <div className="helloWrapper">
         <h2>I'm Johnny</h2>
         <p>
-          I make nice-lookin' website and webapps. For complex apps I use React
+          I make nice-lookin' websites and webapps. For complex apps I use React
           + redux and node + express. For simple apps/pages I use Gatbsy, and
           for all my projects I use CSS-in-JS. When I'm not working on a
           client's website, I'm usually working on a personal project,
