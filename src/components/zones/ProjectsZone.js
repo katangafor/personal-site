@@ -192,6 +192,7 @@ const Project = styled.div`
     font-size: 40px;
     color: white;
     display: inline-block;
+    text-decoration: underline;
     :hover {
       color: gray;
       cursor: pointer;

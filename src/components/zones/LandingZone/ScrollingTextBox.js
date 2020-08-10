@@ -11,12 +11,19 @@ const ScrollingTextBox = ({ textList, textAlign, animationsEnabled }) => {
   const intervalRef = useRef();
 
   useEffect(() => {
+    setTimeout(startScrolling, 10)
+  }, []);
+
+  const startScrolling = () => {
     intervalRef.current = setInterval(() => {
-      const randoNumber = chance.integer({ min: (textList.length - 1 ) * -1, max: 0});
+      const randoNumber = chance.integer({
+        min: (textList.length - 1) * -1,
+        max: 0,
+      });
       const pixelValue = randoNumber * 70;
       setOffset(pixelValue.toString());
-    }, 1800)
-  }, []);
+    }, 2300);
+  }
 
   return (
     <>

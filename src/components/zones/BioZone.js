@@ -7,11 +7,10 @@ const BioZone = () => {
       <div className="helloWrapper">
         <h2>I'm Johnny</h2>
         <p>
-          I make nice-lookin' websites and webapps. For complex apps I use React
+          I make nice-lookin' websites and webapps. For complex apps I usually use React
           + redux and node + express. For simple apps/pages I use Gatbsy, and
-          for all my projects I use CSS-in-JS. When I'm not working on a
-          client's website, I'm usually working on a personal project,
-          whiteboarding physics problems, or playing mandolin.
+          for all my projects I use CSS-in-JS. I love to learn, and I never stop doing it! 
+          I've recently been interested in high-performance APIs, and have been experimenting with Go + GraphQL.
         </p>
         <p>
           All of my websites are WCAG/Section 508 compliant, and make liberal

@@ -78,7 +78,7 @@ const LandingZone = () => {
             <ScrollingTextBox
               animationsEnabled={animationsEnabled}
               textList={[
-                "front-end",
+                "full-stack",
                 "javascript",
                 "css",
                 "SEO",
@@ -86,13 +86,18 @@ const LandingZone = () => {
                 "react",
                 "UX + UI",
                 "event-driven",
+                "python",
+                "object-oriented",
+                "mobile-first",
+                "php",
+                "RESTful",
                 "redux",
                 "git",
                 "svg",
-                "rocket league",
                 "gatsby",
                 "jest",
-                "enzyme",
+                "go",
+                "WCAG",
               ]}
               textAlign="right"
             />
