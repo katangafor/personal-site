@@ -28,7 +28,7 @@ const BioZoneWrapper = styled.div`
   /* background-image: linear-gradient(#130f40, #7510f7); */
   /* rgba(19, 15, 64, 1) */
   background-image: linear-gradient(rgba(19, 15, 64, 1), rgba(19, 15, 64, 1));
-
+  padding: 35px 0px 35px 0px;
   color: white;
 
   .helloWrapper {
@@ -41,6 +41,7 @@ const BioZoneWrapper = styled.div`
       font-size: 40px;
       font-weight: 300;
       margin-top: 30px;
+      text-shadow: 2px 2px 4px #000;      
     }
 
     p {

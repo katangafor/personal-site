@@ -50,7 +50,8 @@ const EndingZone = () => {
       </TreeWrapper>
       <ContactWrapper>
         <h2>Hit me up!</h2>
-        <h3>johnnykane@gmail.com</h3>
+	<h3>The Master</h3>
+        <h3>johnnykhane@gmail.com</h3>
         <a href="https://github.com/katangafor" target="_blank">
           <h3>Github</h3>
         </a>
